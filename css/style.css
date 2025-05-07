@@ -198,6 +198,43 @@ nav a:hover {
     width: 65%;
 }
 
+.hebergements-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.hebergements-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    width: calc(33.33% - 10px);
+}
+
+.hebergements-card img {
+    width: 100%;
+    height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-card .card-content {
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hebergements > h3 {
+    margin-top: 30px;
+    text-align: left;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 31%;
@@ -242,6 +279,10 @@ nav a:hover {
 .populaires-cards .card-rating {
     margin-bottom: 7px;
 }
+
+/****** Activities ******/
+
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
