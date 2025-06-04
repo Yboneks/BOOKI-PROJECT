@@ -98,20 +98,19 @@ nav a:hover {
     height: 281px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 35px;
 }
 
-.search-part h1 {
-    padding-bottom: 8px;
-    font-size: 22px;
-}
-
-.search-part #choix {
-    padding-bottom: 35px;
+.search-part .search-title {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
 }
 
 .search-part form {
-    padding-bottom: 35px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -127,7 +126,7 @@ nav a:hover {
     border: 0.1px solid rgb(187, 184, 184);
     border-radius: 15px;
     width: 377px;
-    height: 49px;
+    height: auto;
 }
 
 .search-part #loc {
@@ -447,7 +446,7 @@ footer ul {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {    
     body {
-        width: 1024px;
+        width: auto;
         height: 1893px;
     }
 
@@ -572,13 +571,6 @@ footer ul {
     width: 100%;
    }
 
-   nav {
-    width: 100%;
-    gap: 0;
-    justify-content: space-around;
-    border-bottom: 3px solid #F2F2F2;
-   }
-
    nav  a{
     /* border-bottom: 3px solid #F2F2F2; */
    }
@@ -586,10 +578,7 @@ footer ul {
    nav a:hover {
     border-bottom: 3px solid #0065FC;
     border-top: none;
-   }
-
-   nav:hover {
-    border: none;
+    width: 50%;
    }
 
    .search-part {
@@ -598,12 +587,9 @@ footer ul {
     padding: 0 20px;
    }
 
-   .search-part h1 {
-    flex-wrap: wrap;
-   }
-
    .search-part form {
     width: 100%;
+    height: auto;
    }
 
    #loc {
@@ -621,7 +607,7 @@ footer ul {
    .search-part button[type="submit"] {
     align-items: flex-end;
     width: 15%;
-    height: 47px;
+    height: auto;
    }
 
    .search-part #loupe {
@@ -632,8 +618,7 @@ footer ul {
 
    .search-part .filtres-container {
     width: 100%;
-    height: 161px;
-    padding-bottom: 35px;
+    height: auto;
    }
 
    .search-part ul {
@@ -752,16 +737,4 @@ footer ul {
     width: 100%;
     height: auto;
    }
-}
-
-@media (max-width: 374.98px){
-    
-    .search-part {
-        height: auto;
-        margin-bottom: 35px;
-    }
-    #infos {
-        margin-top: 75px;
-        padding-top: 35px;
-    }
 }
