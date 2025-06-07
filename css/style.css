@@ -573,9 +573,10 @@ footer ul {
 
    nav {
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     position: relative;
+    gap: 40px;
    }
 
    nav::after {
@@ -600,10 +601,12 @@ footer ul {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-55%);
     width: 0%;
     height: 2px;
     background-color: #0065FC;
+    transition: width 0.3s ease;
    }
 
    nav a:hover {
@@ -611,7 +614,7 @@ footer ul {
    }
 
    nav a:hover::after {
-    width: 100%;
+    width: 50vw;
    }
 
    .search-part {
