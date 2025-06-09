@@ -388,7 +388,6 @@ nav a:hover {
 }
 
 .activities-card article {
-    flex: 1;
     min-width: 200px;
     max-width: 300px;
     border-radius: 30px;
