@@ -254,6 +254,17 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    clip-path: inset(100%);
+    border: 0;
+    overflow: hidden;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 871px;
